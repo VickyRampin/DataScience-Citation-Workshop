@@ -1,0 +1,71 @@
+Data requires citations for the same reasons journal articles and other types of publications require citations: to acknowledge the original author/producer and to help other researchers find the resource.
+
+A dataset citation includes all of the same components as any other citation:
+
+Author or creator - the person(s), organization, issuing agency or agencies responsible for creating the dataset
+Date of publication - the year the dataset was published, posted or otherwise released to the public (not the date of the subject matter).
+Title or description - complete title or if no title exists, you must create a brief description of the data, including time period covered in the data if applicable
+Publisher  - entity (organization, database, archive, journal) responsible for hosting the data 
+URL or DOI  - the unique identifier if the data set is online
+
+Certain styles may also ask for additional information such as:
+
+Edition or version
+Date accessed online (Note: APA does not require this)
+Format description e.g. data file, database, CD-ROM, computer software
+
+
+Unfortunately, standards for the citation of data are not uniformly agreed upon and have yet to be codified by the National Information Standards Organization (an organization that sets technical standards for other bibliographic materials).  However, many data providers and distributors and some style manuals do provide guidelines.  Some of these instructions are listed on this guide.
+
+Be sure to follow the general citation format for the style manual your professor has asked you to use.  It is always better to provide more information about a resource rather than less!
+
+Long-term archiving of software is best done in dedicated data repositories, the two most popular in terms of DataCite DOIs are Zenodo (close to 5000 DOIs for software) and NanoHub (about 2,000 DOIs for software). NanoHub uses the open source HubZero software that integrates a subversion code repository, whereas Zenodo has built an integration with Github, described in this guide.
+
+Providing a long-term archive for code is needed to properly cite software, similarly to what we expect for research data and scholarly articles. We of course don’t have to use DOIs for this, but DOIs make citation easier by requiring basic citation metadata, are supported by reference managers, and we can provide formatted citations via DOI content negotiation, e.g. in DataCite Labs Search:
+
+The Github/Zenodo integration assigns a DOI to a particular Github release of a software repo. This is perfect for a citation, which should be specific for the software version used in a particular research project. In addition, users of software and software authors want to know who is citing or otherwise re-using all versions of the software. In order for this to work we need to think beyond a specific release and link that release to other releases and to the Github repository itself. The repository has no DOI attached to it in the current workflow, so this has to be done in a service separate from the DataCite Metadata Store.
+
+
+https://guides.github.com/activities/citable-code/
+
+
+A piece of software might be created by dozens, if not thousands of contributors. Do all of them get cited? This seems like the classic "attribution stacking" problem. Perhaps it might be better to have variations, with or without authors and/or with a pointer to contributors
+    There's also the difference between the maintainer(s) of a project (who is/are currently responsible for it), and the contributors (those who have committed code to the project, or made other contributions). I imagine it would be the maintainers (and possibly also previous maintainers) that would be cited, though there are bound to be exceptions.
+
+Publisher name/location is similarly difficult. If I collaborate on a project with another developer and its published on github then who is the publisher and which location do we use? Is it github? Is it the repo owner (which might be an organisation)?
+    I think this can be optional, but might be useful when software is produced solely by a specific university or software company. A better analogy to book publishers, though, might be the code hosting (e.g. "GitHub") or archiving (e.g. "fighare") service. The geographic location is probably irrelevant, unless it's necessary for distinguishing between multiple entities with the same name.
+
+For software I'd be interested in getting a snapshot (for archival purposes) but I'm also interested in the main, live repo (if there is one) as that is likely to have more context, e.g. for identifying/reporting bugs, future collaboration, etc.
+    Yes, I think being able to cite the snapshot as well as providing details of the current codebase (even if it's just the equivalent of an "Available from" or "Accessed at" URL) needs to be in there.
+    
+    
+I. Data sets:
+
+Basic Elements:  [Follow APA guidelines for "Data set" (pp. 210-211) or online from MSU] 
+
+Author/Rightsholder, A. A. (Year). Title of publication or data set (Version number if available) [Data File]. Retrieved from (or available from) http://xxxx
+
+The title of the data set should be italicized unless the data set is included as part of a larger work or volume
+
+Example:
+
+The World Bank, World Development Indicators (2012). GNI per capita, Atlas method  [Data file]. Retrieved from http://data.worldbank.org/indicator/NY.GNP.PCAP.CD
+
+Example of Table generated from an interactive data set:
+
+Bureau of Economic Analysis, U.S. Department of Commerce (2013). U.S. Direct Investment Abroad, All U.S. Parent Companies 2009-2010. [Data file].  Available from BEA.gov/iTable 
+
+II. Table from a publication 
+
+Basic Elements: [Follow APA guidelines for "entry in a reference work" (p. 205)] 
+
+Author. (Year). Title of entry. In Editor (Edition), Title of publication (pp. xxx-xxx). Retrieved from http:// OR Location: Publisher OR doi:xxxx.
+
+Example: (Note: Editor & Edition elements are not applicable in this example)
+
+World Trade Organization. (2012). Table I.3: World merchandise trade and trade in commercial services by region and selected economy, 2005-2011.  In International Trade Statistics, 2012 (p. 22).  Retrieved from: http://www.wto.org/english/res_e/statis_e/its2012_e/its12_toc_e.htm
+
+The title of the data set should be italicized unless the data set is included as part of a larger work or volume, as in the example above.  
+
+
+https://zenodo.org/collection/software?ln=en
